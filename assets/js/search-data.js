@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "Khanh Nguyen",
+          description: "Khanh Nguyen (updated Jan 2025)",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
