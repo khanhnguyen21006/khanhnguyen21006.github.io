@@ -27,7 +27,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I'm Khanh Nguyen, a third-year PhD student at the [Computer Vision Center](https://www.cvc.uab.es), [Universitat Autònoma de Barcelona](https://www.uab.cat) (UAB), advised by Prof. [Dimosthenis Karatzas](https://www.karatzas.co.uk/people/dimosthenis-karatzas). My research lies on the intersection of Trustworthy AI and Large Vision–Language Models, with a focus on Privacy and Safety. I’m currently working on Document Intelligence usecase as part of the [European Lighthouse on Secure and Safe AI (ELSA)](https://elsa-ai.eu) project.
+Hi! I'm Khanh Nguyen, a third-year PhD student at the [Computer Vision Center](https://www.cvc.uab.es), [Universitat Autònoma de Barcelona](https://www.uab.cat) (UAB), advised by Prof. [Dimosthenis Karatzas](https://www.karatzas.co.uk/people/dimosthenis-karatzas). My research focuses on the privacy and security of vision–language models (VLMs). I build attacks that measure what these models leak about their training data and their deployment context, including membership inference and system prompt extraction. I also study defenses such as differential privacy and federated learning. Most of this work is part of the [European Lighthouse on Secure and Safe AI (ELSA)](https://elsa-ai.eu) project, where I started with privacy in Document Intelligence.
+
+From October 2025 to March 2026, I was a research intern at Huawei Finland. There I worked on diffusion models that generate multi-sensor LiDAR sequences for autonomous driving.
 
 I hold an MSc in Computer Vision from UAB, where I completed my Master’s thesis at the [Vision, Language and Reading](https://www.karatzas.co.uk) (VLR) group, advised by Dr. [Ali Furkan Biten](https://github.com/furkanbiten) and Dr. [Andres Mafla](https://es.linkedin.com/in/andres-mafla-delgado-a17bb981).
 
