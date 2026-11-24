@@ -1,6 +1,39 @@
 ---
 ---
 
+@inproceedings{nguyen2027dispel,
+  title={System Prompt Extraction against Vision-Language Models.},
+  author={Khanh Nguyen and Raouf Kerkouche and Mario Fritz and Dimosthenis Karatzas},
+  booktitle={Under Review},
+  year={2027},
+  url={khanhnguyen21006.github.io},
+  abstract={System prompts are a foundational component of deployed vision-language large models (VLLMs), enabling service providers to shape model behavior, enforce usage policies, and embed proprietary business logic through confidential instructions prepended to user inputs at inference time. As these instructions frequently encode competitive advantages and sensitive operational details, they are treated as protected assets by deploying organizations. Prior work has demonstrated that system prompts are susceptible to extraction attacks, wherein adversaries construct malicious queries to coerce a model into disclosing its hidden context. However, existing attacks operate exclusively in the textual modality, leaving the visual channel entirely unexplored as an attack vector. This is a significant oversight: visual tokens are projected into the same embedding space as text tokens, {making the image a co-equal input channel to the decoder that processes the system prompt, and an attack surface that text-only defenses do not cover.} In this paper, we present the first system prompt extraction attack against VLLMs that operates entirely through the image modality. We introduce \attackName{}, a \textbf{DI}ffusion-guided \textbf{S}ystem \textbf{P}rompt \textbf{E}xtraction via reinforcement \textbf{L}earning that formulates adversarial image generation as a learned policy problem and fine-tunes a pretrained diffusion model via reinforcement learning with LoRA, {encoding the adversarial signal in the visual semantics rather than a superimposed perturbation, so that the generated images reliably elicit system prompt leakage while remaining robust to purification-based defenses.} Extensive evaluation across multiple VLLMs and datasets demonstrates that \attackName{} successfully extracts hidden system prompts and significantly outperforms state-of-the-art text-based baselines on exact-match metrics, exposing a critical and previously uncharacterized attack surface in deployed multi-modal systems.},
+  html={khanhnguyen21006.github.io},
+  code={https://github.com/khanhnguyen21006/DESPEL}
+}
+
+@inproceedings{nguyen2026crosslidar,
+  title={CrossLiDAR: Controllable Multi-Sensor LiDAR Sequence Generation},
+  author={Nguyen, Khanh and Walker, Thomas and Telli, Hichem and de la Torre-Ortiz, Carlos and Fiorini, Stefano and Bekhouche, Salah Eddine and Zighem, Mohammed-En-Nadhir and Swaileh, Wassim and Wang, Tinghuai},
+  booktitle={IEEE/CVF Winter Conference on Applications of Computer Vision},
+  year={2027},
+  url={https://arxiv.org/pdf/2611.11131},
+  abbr={WACV 2027},
+  abstract={High-fidelity LiDAR simulation remains a bottleneck for scalable development and validation of autonomous systems. Existing generators can synthesize realistic scans, but they are typically constrained to a single sensor configuration, offer limited control over structure and geometry, and drift in long-horizon 4D generation. We present CrossLiDAR, a unified transformer-based framework capable of generating controllable and spatio-temporally consistent multi-sensor LiDAR sequences. Our approach leverages a rectified flow objective with a Multi-Modal Diffusion Transformer (MM-DiT) backbone, within a compact latent space of range images. To support multiple LiDAR sensors, an Inter-sensor Module enables interaction across sensors, while a ControlNet-style branch provides structural conditioning (e.g., BEV priors or 3D bounding boxes). For modeling the temporal consistency, CrossLiDAR generates short N-frame sequences and extends them autoregressively to improve long-horizon coherence. Our model significantly outperforms state-of-the-art baselines, achieving an average improvement of 29.56\% in JSD and 15.36\% in MMD evaluated on nuScenes and the Waymo Dataset. CrossLiDAR bridges the gap to modern autonomous-driving simulation by enabling calibration-consistent multi-sensor LiDAR rollouts over long horizons for controllable, scenario-based testing.},
+  html={https://arxiv.org/pdf/2611.11131}
+}
+
+@inproceedings{nguyen2026bayesian,
+  title={Bayesian Low-Rank Posteriors for Scalable Membership Inference},
+  author={Khanh Nguyen and Antonio Emanuele Cin{\`a} and Andrey Barsky and Alejandra Reinares and Fabio Roli and Dimosthenis Karatzas},
+  booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
+  year={2026},
+  url={https://openreview.net/forum?id=7y5OCsNjHI},
+  abbr={NeurIPS 2026},
+  abstract={Membership inference attacks (MIAs) aim to determine whether a sample was used during the training of a target model. The most effective MIAs rely on reference (or shadow) models to estimate target-conditional score distributions, but training such ensembles is computationally prohibitive for modern large-scale Vision--Language Models (VLMs). In this work, we propose a scalable alternative that replaces explicit reference-model training with a Bayesian approximation over low-rank adaptation parameters. Leveraging parameter-efficient fine-tuning, we model uncertainty only within the LoRA subspace and construct a posterior from a single training run, from which we sample a diverse set of virtual reference models. We instantiate this approach using stochastic weight averaging Gaussian (SWAG), enabling efficient approximation of target-conditional score distributions at a fraction of the cost of conventional shadow-model ensembles. We evaluate the resulting attack on three downstream-adapted VLMs across two privacy-sensitive visual question answering tasks, namely Document VQA and medical VQA. To isolate the effect of pretraining knowledge, we additionally introduce a controlled synthetic dataset. Our approach outperforms standard reference-based attacks while requiring only a single trained reference model, demonstrating that accurate and scalable membership inference is feasible even for large VLMs.},
+  html={https://openreview.net/forum?id=7y5OCsNjHI},
+  code={https://github.com/khanhnguyen21006/LIBRA}
+}
 
 @inproceedings{nguyen2025docmia,
   title={Doc{MIA}: Document-Level Membership Inference Attacks against Doc{VQA} Models},
