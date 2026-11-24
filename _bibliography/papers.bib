@@ -7,9 +7,10 @@
   booktitle={Under Review},
   year={2027},
   url={khanhnguyen21006.github.io},
+  abbr={Preprint},
   abstract={System prompts are a foundational component of deployed vision-language large models (VLLMs), enabling service providers to shape model behavior, enforce usage policies, and embed proprietary business logic through confidential instructions prepended to user inputs at inference time. As these instructions frequently encode competitive advantages and sensitive operational details, they are treated as protected assets by deploying organizations. Prior work has demonstrated that system prompts are susceptible to extraction attacks, wherein adversaries construct malicious queries to coerce a model into disclosing its hidden context. However, existing attacks operate exclusively in the textual modality, leaving the visual channel entirely unexplored as an attack vector. This is a significant oversight: visual tokens are projected into the same embedding space as text tokens, {making the image a co-equal input channel to the decoder that processes the system prompt, and an attack surface that text-only defenses do not cover.} In this paper, we present the first system prompt extraction attack against VLLMs that operates entirely through the image modality. We introduce \attackName{}, a \textbf{DI}ffusion-guided \textbf{S}ystem \textbf{P}rompt \textbf{E}xtraction via reinforcement \textbf{L}earning that formulates adversarial image generation as a learned policy problem and fine-tunes a pretrained diffusion model via reinforcement learning with LoRA, {encoding the adversarial signal in the visual semantics rather than a superimposed perturbation, so that the generated images reliably elicit system prompt leakage while remaining robust to purification-based defenses.} Extensive evaluation across multiple VLLMs and datasets demonstrates that \attackName{} successfully extracts hidden system prompts and significantly outperforms state-of-the-art text-based baselines on exact-match metrics, exposing a critical and previously uncharacterized attack surface in deployed multi-modal systems.},
   html={khanhnguyen21006.github.io},
-  code={https://github.com/khanhnguyen21006/DESPEL}
+  code={https://github.com/khanhnguyen21006/DISPEL}
 }
 
 @inproceedings{nguyen2026crosslidar,
